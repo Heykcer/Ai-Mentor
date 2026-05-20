@@ -86,7 +86,7 @@ export default function (data) {
                 courseId = coursesData[0].id || coursesData[0]._id;
             }
         } catch (e) {
-            console.warn('Failed to parse courses response');
+            console.warn('Failed to parse courses response',e);
         }
     }
     sleep(1);
